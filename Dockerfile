@@ -26,7 +26,7 @@ RUN git clone https://github.com/blockstack/stacks-blockchain.git
 
 WORKDIR /node/stacks-blockchain/
 
-RUN cd testnet; cargo build --bin stacks-node;
+RUN cd testnet/stacks-node; cargo build --bin stacks-node;
 
 ENTRYPOINT ./target/debug/stacks-node neon
 
